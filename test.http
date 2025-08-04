@@ -1,0 +1,8 @@
+POST http://localhost:7071/api/http_acs
+Content-Type: application/json
+
+{
+  "message": "Hello, this is a test message from Azure Communication Services!",
+  "to": "+181398765432"
+}
+
