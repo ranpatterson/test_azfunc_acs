@@ -1,8 +1,11 @@
-POST http://localhost:7071/api/http_acs
+@url = http://localhost:7071/api/http_acs
+#url = https://will-sms-fa.azurewebsites.net/api/http_acs
+
+POST {{url}}
 Content-Type: application/json
 
 {
   "message": "Hello, this is a test message from Azure Communication Services!",
-  "to": "+181398765432"
+  "to": ["+15558675309"]
 }
 

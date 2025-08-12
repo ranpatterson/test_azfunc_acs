@@ -51,7 +51,7 @@ def http_acs(req: func.HttpRequest) -> func.HttpResponse:
         sms_client = SmsClient.from_connection_string(connectionString)
         sms_client.send(
             from_=from_phone,
-            to=[to_phone],
+            to=to_phone,
             message=message,
             enable_delivery_report=True
         )
